@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title')
+@section('title', 'Home')
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
@@ -574,18 +574,18 @@
 
 
 <!-- モーダル1 -->
-<div id="modal1"　 class="modal_box">
+<div id="modal1" class="modal_box">
         <div class="overLay modalClose"> </div>
                 <h2 id="make">Make your donations?</h2>
                 <div class="link_area">
             <a href="" class="modalClose">×</a><!--デフォルトなどでリセットで消すか、単純に消すか。aタグ使うのやめるか-->
         <div class="list">
-            <div class="modal_link"><a href="{{ url('/news') }}" class="button02">$0</a></div><!--画面遷移されるのならaタグの方がいいか-->
-            <div class="modal_link"><a   data-target="modal2" data-price="1" class="modal_switch hoge"><span>$1</span></a></div>
-            <div class="modal_link"><a   data-target="modal2" data-price="5" class="modal_switch hoge"><span>$5</span></a></div>
-            <div class="modal_link"><a   data-target="modal2" data-price="10" class="modal_switch hoge"><span>$10</span></a></div>
-            <div class="modal_link"><a  data-target="modal2" data-price="50" class="modal_switch hoge"><span>$50</span></a></div>
-            <div class="modal_link"><a   data-target="modal2" data-price="100" class="modal_switch hoge"><span>$100</span></a></div>
+            <div class="modal_link"><a href="{{ url('/news') }}" class="button02"><span class="white">$0</span></a></div><!--画面遷移されるのならaタグの方がいいか-->
+            <div class="modal_link"><a data-target="modal2" data-price="1" class="modal_switch hoge"><span class="white">$1</span></a></div>
+            <div class="modal_link"><a data-target="modal2" data-price="5" class="modal_switch hoge"><span class="white">$5</span></a></div>
+            <div class="modal_link"><a data-target="modal2" data-price="10" class="modal_switch hoge"><span class="white">$10</span></a></div>
+            <div class="modal_link"><a data-target="modal2" data-price="50" class="modal_switch hoge"><span class="white">$50</span></a></div>
+            <div class="modal_link"><a data-target="modal2" data-price="100" class="modal_switch hoge"><span class="white">$100</span></a></div>
         </div>
         
         @if (Auth::check())

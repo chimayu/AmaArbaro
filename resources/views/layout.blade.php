@@ -14,12 +14,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/layout.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/home.css') }}">
 
     @include('._script')
 
-    <title>AmaArbaro @yield('title')</title>
+    <title>@yield('title') | AmaArbaro</title>
     </head>
     <body>
         {{-- toast --}}
@@ -53,7 +54,8 @@
                 <div class="header-right">
                     <a href="http://twitter.com/share?"><img src="{{ asset('/img/logo_twitter.png')}}" id="icon" class="twitter_button" ontouchstart=""></a>
                     <a href="http://www.facebook.com/share.php?u="><img src="{{ asset('/img/logo_facebook.png')}}" id="icon" class="facebook_button" ontouchstart=""></a>
-                    <a href="{{ url('contact/form') }}"><div class="about">About us</div></a>                    
+                    <a href="{{ url('contact/form') }}"><div class="about">About us</div></a>
+                    
                     <div>
                         @if (Route::has('login'))
                             <div class="menu">

@@ -62,7 +62,6 @@
 
 .link_area .modal_link a {
   background:  #37654E;
-  font-family: 'Roboto', sans-serif;
   justify-content: center;
   list-style-type: none;
   line-height: 10%;
@@ -70,8 +69,9 @@
   display: inline-block; 
   width: 200px;
   margin: 10px 10px;
-  color:#fff;
+  color:#ffffff;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .link-area ul li.modal_link:first-child a {
@@ -143,4 +143,8 @@ canvas {
   display:block;
   margin:auto;
   
+}
+
+span.white {
+  color: #ffffff;
 }
