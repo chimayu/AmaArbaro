@@ -6,7 +6,6 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/form.css') }}" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="{{ asset('/js/form.js') }}"></script>
 
 
@@ -32,12 +31,13 @@
       
     <div class="contents1">
    
-    AmaArbaro is composed of students are learning IT(Information Technology)group .<br>
-    We are not sure what we can do because we are just students however<br>
+    AmaArbaro is composed of a group of students learning IT(Information Technology) .<br>
+    We are not sure what we can do because we are just students.<br> 
+    However,
      we believe we can do even small things for the Earth through internet<br>
-     where people can know anythings and communicate with anyones.<br>
-    This is the main reason this web site exist.<br>
-    AmaArbaro administers this site for you who believe we can do something for protecting this beautiful earth.
+     where people can know anything and communicate with anyone.<br>
+    This is the main reason why this website exists.<br>
+    AmaArbaro administers this site for you who believes we can do something to protect this beautiful earth.
     </div>
     
         
@@ -47,10 +47,10 @@
     <p class="contents1">
        
     We work as NGO(non-governmental organizations) and plant trees around the world by contribution.<br>
-    AmaArbaro was a small group that consist of only 5 students when we start this work but collaborators are increased,<br>
+    AmaArbaro is a small group that consists of only 5 students when we started this work, but collaborators has increased,<br>
      and we are still growing around the world.<br>     
-    However people don’t change anythings because people can not accept their quality of daily lives decline.<br>
-    If that's the case, why don’t you even plant trees?
+    However, people don’t want to change anything, because they cannot accept their quality of daily lives are  deteriorating.<br>
+    You have to take an action, why don’t you plant trees?
     </p>
    
   
@@ -60,23 +60,24 @@
     <p class="contents1">
     The cost to plant a tree is $50.<br>
     Do you feel it’s expensive?<br>
-    Do you feel difficult payment method?<br>
-    You can donate any amounts and simply for planting tree, saving the earth.<br>
+    Do you think the donation method is difficult?<br>
+    You can donate any amount for planting tree to save the earth.<br>
     </p>
 
     <h1 class="title">Vision</h1>
     <p class="contents">
-    Be the environment everyone should have a sense of ownership to solve problems.</p>
+    Improve the environment where everyone will have a sense of ownership to help solving problems.</p>
 
     <h1 class="title">Mission</h1>
     <p class="contents">We have ZERO price policy.<br>
-    To provide the environment everyone can take action whenever they want.<br>
+    To save the environment everyone can take action whenever they want.<br>
 
     
     <h1 class="title">Our Works/History</h1>
     <p class="contents">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
      Nobis doloribus mollitia animi qui error asperiores, accusantium, ipsam veniam eos beatae, veritatis maiores nostrum?<br>
       Quisquam consequatur quam iusto tenetur minus ab.</p>
+
 
     <h1 class="title"> Contact</h1>
     
