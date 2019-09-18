@@ -117,8 +117,6 @@ float: right;
 .link_area ul li.modal_link:last-child a {
   float: none;
 }
-}
-
 
 .ha {
 stroke: #37654E;
@@ -126,12 +124,10 @@ stroke-width:5;
 }
 
 .miki{
-
 stroke-width:10;
 }
 
 .eda{
-
 stroke-width:10;
 }
 
@@ -142,7 +138,6 @@ stroke-width:10;
 canvas {
 display:block;
 margin:auto;
-
 }
 
 span.white {
