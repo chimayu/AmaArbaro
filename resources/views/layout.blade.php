@@ -41,31 +41,28 @@
             <div class="header">
             <!--ヘッダー左側部分-->
             <div class="header-left">
-                    <a href="{{ route('welcome') }}">     
-                        <img src="{{ asset('/img/logo.png')}}" class="ticon">
-                    </a>
-            <a href="{{ route('welcome') }}">
-               <div class="name">Ama Arbaro</div>
-             </a>
-               <div class="zero">Make donations<br>with ZERO price</a></div>
+                <a href="{{ route('welcome') }}">     
+                    <div class="name"><img src="{{ asset('/img/logo.png')}}" class="ticon mr-4">Ama Arbaro</div>
+                </a>
+               <div class="zero"><a href="{{ route('news') }}" class="link">Make donations<br>with ZERO price</a></div>
             </div>
             <!--ヘッダー右側部分-->
             <div class="header-right">
-                <a href="http://twitter.com/share?.php?u=https://amaarbaro.herokuapp.com"><img src="{{ asset('/img/logo_twitter.png')}}" id="icon" class="twitter_button" ontouchstart=""></a>
-                <a href="http://www.facebook.com/share.php?u=https://amaarbaro.herokuapp.com"><img src="{{ asset('/img/logo_facebook.png')}}" id="icon" class="facebook_button" ontouchstart=""></a>
-                <a href="{{ route('contact') }}"><div class="about">About us</div></a>
+                <a href="http://twitter.com/share?.php?u=https://amaarbaro.herokuapp.com" class="link"><img src="{{ asset('/img/logo_twitter.png')}}" id="icon" class="twitter_button" ontouchstart=""></a>
+                <a href="http://www.facebook.com/share.php?u=https://amaarbaro.herokuapp.com" class="link"><img src="{{ asset('/img/logo_facebook.png')}}" id="icon" class="facebook_button" ontouchstart=""></a>
+                <a href="{{ route('contact') }}" class="link"><div class="about">About us</div></a>
                 
                 <div>
             
                         @if (Route::has('login'))
                             <div class="menu">
                                 @auth
-                                    <a href="{{ route('home') }}">My page</a>
-                                    <a href="{{ route('user.logout') }}">Logout</a>
+                                    <a href="{{ route('home') }}" class="link">My page</a>
+                                    <a href="{{ route('user.logout') }}" class="link mr-3">Logout</a>
                                 @else
-                                    <a href="{{ route('login') }}">Login</a>
+                                    <a href="{{ route('login') }}" class="link">Login</a>
                                     @if (Route::has('register'))
-                                        <a href="{{ route('register') }}">Sign up</a>
+                                        <a href="{{ route('register') }}" class="link mr-3">Sign up</a>
                                     @endif
                                 @endauth
                             </div>
@@ -80,9 +77,9 @@
 
         <footer class="mb-4 mt-5">
             <div class="footer">
-                <a id="foot" href="{{ route('terms') }}">Terms of use</a>
-                <a id="foot" href="{{ route('privacy') }}">Privacy policy</a>
-                <p id="foot" class="ama">&copy; 2019  Ama Arbaro</p>
+                <a id="foot" href="{{ route('terms') }}" class="link">Terms of use</a>
+                <a id="foot" href="{{ route('privacy') }}" class="link">Privacy policy</a>
+                <p id="foot" class="ama ml-2">&copy; 2019  Ama Arbaro</p>
             </div> 
         </footer> 
     </body>
