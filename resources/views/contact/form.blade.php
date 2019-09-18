@@ -4,7 +4,10 @@
     <head>
   
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/form.css') }}" rel="stylesheet" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="{{ asset('/js/form.js') }}"></script>
 
 
     @section('content')
@@ -17,105 +20,44 @@
         $ cd フォルダ名で移動
         $ php artisan serve　でサーバの起動
         -->
-<style type="text/css">
-   
-    .title1 {
-        color:#37654E;
-        text-align:center;
-    }
-    .box-img0{
-     
-        object-fit: fill;
-    }
-    .box-img1{
-        width: 50%;
-        height: 40%;
-        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
-    }
-    .contents1{
-        color:#37654E;
-        text-align:center;
-        margin: 20px; 
-        padding: 20px;
-    }
-    .box-img2{
-        width: 50%;
-        height: 40%;
-    
-        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
-    }
-    .contents{
-        color:#37654E;
-        text-align:center;
-    }
-    .box-img3{
 
-        height: 600px;
-        width: 100%;
-        object-fit:contain;
-    }
-    .box-img4{
-        box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
-        width: 70%;
-        height: 40%;
 
-    }
-    .title{
-        color:#37654E;
-        text-align:center;
-    }
 
-    .container{
-        width:400px;
-    margin-right: auto;
-    margin-left : auto;
-    }
-
-</style>
-
-<script type="text/javascript">
-</script>
 
   
 
-    <h1 class="title1">About Us</h1>
-        <br>
-        <br>
-        <br>
-        <p class="contents1">
-        <img src="{{ asset('/img/mac.jpg')}}" class="box-img1"　alt="mac">
-        </p>
+    <h1 class="title">About Us</h1>
+       
+      <figure> <img src="{{ asset('/img/mac.jpg')}}" id="box-img" class="fadein"　alt="mac"></figure>
+      
     <div class="contents1">
    
     AmaArbaro is composed of students are learning IT(Information Technology)group .<br>
-    We are not sure what we can do because we are just students however we believe we can do even small things for the Earth through internet where people can know anythings and communicate with anyones.<br>
+    We are not sure what we can do because we are just students however<br>
+     we believe we can do even small things for the Earth through internet<br>
+     where people can know anythings and communicate with anyones.<br>
     This is the main reason this web site exist.<br>
     AmaArbaro administers this site for you who believe we can do something for protecting this beautiful earth.
     </div>
     
-        <p class="contents1">
-        <img src="{{ asset('/img/tree.jpg')}}" class="box-img2" alt="森を守る" title="protectrre">
-            </p>
+        
+       <figure> <img src="{{ asset('/img/tree.jpg')}}" id="box-img" class="fadein" alt="森を守る" title="protectrre"></figure>
+         
         <br>
     <p class="contents1">
        
     We work as NGO(non-governmental organizations) and plant trees around the world by contribution.<br>
-    AmaArbaro was a small group that consist of only 5 students when we start this work but collaborators are increased, and we are still growing around the world.<br>     
+    AmaArbaro was a small group that consist of only 5 students when we start this work but collaborators are increased,<br>
+     and we are still growing around the world.<br>     
     However people don’t change anythings because people can not accept their quality of daily lives decline.<br>
     If that's the case, why don’t you even plant trees?
     </p>
-        <br>
-        <br>
-        <br>
+   
+  
+     <figure><img src="{{ asset('/img/tree.form.jpg')}}" alt="木の実際の画像" title="tree" class="fadein" id="box-img"></figure>
+    
+        
     <p class="contents1">
-        <img src="{{ asset('/img/tree.form.jpg')}}" alt="木の実際の画像" title="tree" class="box-img4">
-    </p>
-        <br>
-        <br>
-    <p class="contents1">
-        <br>
-        <br>
-        <br>
     The cost to plant a tree is $50.<br>
     Do you feel it’s expensive?<br>
     Do you feel difficult payment method?<br>

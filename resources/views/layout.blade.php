@@ -4,8 +4,7 @@
 
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <!--google font-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
@@ -42,21 +41,22 @@
             <div class="header">
             <!--ヘッダー左側部分-->
             <div class="header-left">
-                    <a href="{{ url('/') }}">
+                    <a href="{{ url('/') }}">     
                         <img src="{{ asset('/img/logo.png')}}" class="ticon">
                     </a>
-                    <a href="{{ url('/') }}">
-                        <div class="name">Ama Arbaro</div>
-                    </a>
-                <div class="zero">Make donations/contributions<br>with ZERO price</a></div>
-                </div>
-                <!--ヘッダー右側部分-->
-                <div class="header-right">
-                    <a href="http://twitter.com/share?"><img src="{{ asset('/img/logo_twitter.png')}}" id="icon" class="twitter_button" ontouchstart=""></a>
-                    <a href="http://www.facebook.com/share.php?u="><img src="{{ asset('/img/logo_facebook.png')}}" id="icon" class="facebook_button" ontouchstart=""></a>
-                    <a href="{{ url('contact/form') }}"><div class="about">About us</div></a>
-                    
-                    <div>
+            <a href="{{ url('/') }}">
+               <div class="name">Ama Arbaro</div>
+             </a>
+               <div class="zero">Make donations<br>with ZERO price</a></div>
+            </div>
+            <!--ヘッダー右側部分-->
+            <div class="header-right">
+                <a href="http://twitter.com/share?.php?u=https://amaarbaro.herokuapp.com"><img src="{{ asset('/img/logo_twitter.png')}}" id="icon" class="twitter_button" ontouchstart=""></a>
+                <a href="http://www.facebook.com/share.php?u=https://amaarbaro.herokuapp.com"><img src="{{ asset('/img/logo_facebook.png')}}" id="icon" class="facebook_button" ontouchstart=""></a>
+                <a href="{{ url('contact/form') }}"><div class="about">About us</div></a>
+                
+                <div>
+            
                         @if (Route::has('login'))
                             <div class="menu">
                                 @auth

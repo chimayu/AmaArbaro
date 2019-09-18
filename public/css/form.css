@@ -1,0 +1,48 @@
+.title {
+    color:#37654E;
+    text-align:center;
+}
+.title h1{
+    font-size: 50%;
+}
+
+.contents1{
+    color:#37654E;
+    text-align:center;
+    margin: 20px; 
+    padding: 20px;
+    font-size:20px;
+}
+
+.row{
+    justify-content: center;
+}
+
+.contents{
+    color:#37654E;
+    text-align:center;
+    font-size:20px;
+}
+
+#box-img{
+    box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.8);
+    width: 40%;
+    height: 40%;
+
+}
+
+.container{
+    width:380px;
+margin-right: auto;
+margin-left : auto;
+}
+
+figure{
+    text-align: center;
+}
+
+.fadein {
+opacity : 0;
+transform: translateY(20px);
+transition: all 3s;
+}

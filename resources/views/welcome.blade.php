@@ -9,7 +9,9 @@
 
 <script defer src="{{ asset('/js/line.js') }}"></script>
 <!-- モーダルウィンドウを開くボタン -->
+
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome.css') }}">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 @section('content')
 <div id="demoslide01" class="main_visual bg_aaa">
     <a data-target="modal1" class="modal_open"> <svg width=100% height=600px version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -574,7 +576,7 @@
 
 
 <!-- モーダル1 -->
-<div id="modal1" class="modal_box">
+<div id="modal1"　 class="modal_box justify-content-center">
         <div class="overLay modalClose"> </div>
                 <h2 id="make">Make your donations?</h2>
                 <div class="link_area">
@@ -590,21 +592,21 @@
         
         @if (Auth::check())
         @else
-        <a href="http://localhost:8000/login" id="log" >Log in your account.></a>
+        <a href="{{ url('/login') }}" id="log" >Log in your account.></a>
         @endif
         
  </div>
 </div>
 
 <!-- モーダル2 -->
-<div id="modal2" class="modal_box" >
- <div class="overLay modalClose"> </div> 
+<div id="modal2" class="modal_box justify-content-center" >
+ <div class="overLay modalClose" > </div> 
     
     <div class="link_area">
             <p>{{ session('done') }}</p>
             <h2>Confirm your donation</h2>
-            <section class="container m-5">
-        <div class="row justify-content-center">
+            <section class="container m-5 justify-content-center">
+        <div class="row ">
             <div class="col-8">
                 <form action="{{ route('donation.store') }}"  method="POST">
                     @csrf
@@ -862,4 +864,3 @@ function processPayment(paymentData) {
     </body>
 @endsection
 
-</html>
