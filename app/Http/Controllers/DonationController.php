@@ -11,11 +11,6 @@ use App\User;
 
 class DonationController extends Controller
 {
-    public function index() {
-
-       
-    }
-
     public function store(Request $request)
     {
         if (Auth::check()) {
