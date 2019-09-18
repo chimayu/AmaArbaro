@@ -23,9 +23,9 @@ Route::post('donation/store', 'DonationController@store')->name('donation.store'
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::put('/home/update_name', 'HomeController@updateName')->name('home.update.name'); // 更新処理
-Route::put('/home/{id}/update_email', 'HomeController@updateEmail')->name('home.update.email'); // 更新処理
-Route::put('/home/{id}/update_password', 'HomeController@updatePassword')->name('home.update.password'); // 更新処理
-Route::put('/home/{id}/delete_user', 'HomeController@deleteUser')->name('home.delete.user'); // 削除処理
+Route::put('/home/update_email', 'HomeController@updateEmail')->name('home.update.email'); // 更新処理
+Route::put('/home/update_password', 'HomeController@updatePassword')->name('home.update.password'); // 更新処理
+Route::put('/home/delete_user', 'HomeController@deleteUser')->name('home.delete.user'); // 削除処理
 
 Route::get('/logout',[
     'uses' => 'UserController@getLogout',
