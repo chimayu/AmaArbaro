@@ -32,10 +32,10 @@ class HomeController extends Controller
         return view('home', ['donations' => $donations], ['user' => $user]);
     }
 
-    public function updateName(int $id, Request $request)
+    public function updateName(Request $request)
     {
-        $user = User::find($id);
-
+        $user = Auth::user();
+        
         if (isset($request->name)) {
             $user->name = $request->name; //画面で入力されたnameを代入
             $user->save(); //DBに保存
@@ -47,9 +47,9 @@ class HomeController extends Controller
         }
     }
 
-    public function updateEmail(int $id, Request $request)
+    public function updateEmail(Request $request)
     {
-        $user = User::find($id);
+        $user = Auth::user();
 
         if (isset($request->email)) {
             $user->email = $request->email; //画面で入力されたemailを代入
@@ -64,10 +64,10 @@ class HomeController extends Controller
         
     }
 
-    public function updatePassword(int $id, Request $request)
+    public function updatePassword(Request $request)
     {
         
-        $user = User::find($id);
+        $user = Auth::user();
 
         if (Hash::check($request->current_password, $user->password))
         { 
@@ -87,9 +87,9 @@ class HomeController extends Controller
         }
     }
 
-    public function deleteUser(int $id, Request $request)
+    public function deleteUser(Request $request)
     {
-        $user = User::find($id);
+        $user = Auth::user();
 
         if (Hash::check($request->current_password, $user->password))
         { 
