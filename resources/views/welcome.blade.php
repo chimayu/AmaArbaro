@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Home')
+@section('title')
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
@@ -9,9 +9,7 @@
 
 <script defer src="{{ asset('/js/line.js') }}"></script>
 <!-- モーダルウィンドウを開くボタン -->
-
 <link rel="stylesheet" type="text/css" href="{{ asset('css/welcome.css') }}">
-<link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 @section('content')
 <div id="demoslide01" class="main_visual bg_aaa">
     <a data-target="modal1" class="modal_open"> <svg width=100% height=600px version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -576,37 +574,37 @@
 
 
 <!-- モーダル1 -->
-<div id="modal1" class="modal_box justify-content-center">
+<div id="modal1"　 class="modal_box">
         <div class="overLay modalClose"> </div>
                 <h2 id="make">Make your donations?</h2>
                 <div class="link_area">
             <a href="" class="modalClose">×</a><!--デフォルトなどでリセットで消すか、単純に消すか。aタグ使うのやめるか-->
         <div class="list">
-            <div class="modal_link"><a href="{{ url('/news') }}" class="button02"><span class="white">$0</span></a></div><!--画面遷移されるのならaタグの方がいいか-->
-            <div class="modal_link"><a data-target="modal2" data-price="1" class="modal_switch hoge"><span class="white">$1</span></a></div>
-            <div class="modal_link"><a data-target="modal2" data-price="5" class="modal_switch hoge"><span class="white">$5</span></a></div>
-            <div class="modal_link"><a data-target="modal2" data-price="10" class="modal_switch hoge"><span class="white">$10</span></a></div>
-            <div class="modal_link"><a data-target="modal2" data-price="50" class="modal_switch hoge"><span class="white">$50</span></a></div>
-            <div class="modal_link"><a data-target="modal2" data-price="100" class="modal_switch hoge"><span class="white">$100</span></a></div>
+            <div class="modal_link"><a href="{{ url('/news') }}" class="button02">$0</a></div><!--画面遷移されるのならaタグの方がいいか-->
+            <div class="modal_link"><a   data-target="modal2" data-price="1" class="modal_switch hoge"><span>$1</span></a></div>
+            <div class="modal_link"><a   data-target="modal2" data-price="5" class="modal_switch hoge"><span>$5</span></a></div>
+            <div class="modal_link"><a   data-target="modal2" data-price="10" class="modal_switch hoge"><span>$10</span></a></div>
+            <div class="modal_link"><a  data-target="modal2" data-price="50" class="modal_switch hoge"><span>$50</span></a></div>
+            <div class="modal_link"><a   data-target="modal2" data-price="100" class="modal_switch hoge"><span>$100</span></a></div>
         </div>
         
         @if (Auth::check())
         @else
-        <a href="{{ url('/login') }}" id="log" >Log in your account.></a>
+        <a href="http://localhost:8000/login" id="log" >Log in your account.></a>
         @endif
         
  </div>
 </div>
 
 <!-- モーダル2 -->
-<div id="modal2" class="modal_box justify-content-center" >
- <div class="overLay modalClose" > </div> 
+<div id="modal2" class="modal_box" >
+ <div class="overLay modalClose"> </div> 
     
     <div class="link_area">
             <p>{{ session('done') }}</p>
             <h2>Confirm your donation</h2>
-            <section class="container m-5 justify-content-center">
-        <div class="row ">
+            <section class="container m-5">
+        <div class="row justify-content-center">
             <div class="col-8">
                 <form action="{{ route('donation.store') }}"  method="POST">
                     @csrf
@@ -861,6 +859,5 @@ function processPayment(paymentData) {
     
     </div>
 
-    </body>
 @endsection
 
