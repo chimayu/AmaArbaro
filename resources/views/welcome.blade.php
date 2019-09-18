@@ -588,8 +588,7 @@
             <div class="modal_link"><a data-target="modal2" data-price="100" class="modal_switch hoge"><span class="white">$100</span></a></div>
         </div>
         
-        @if (Auth::check())
-        @else
+        @if (Auth::check() === false)
         <a href="http://localhost:8000/login" id="log" >Log in your account.></a>
         @endif
         
