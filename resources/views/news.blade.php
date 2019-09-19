@@ -20,7 +20,7 @@
             @foreach ($news as $value)
             <ul>
                 <li class="boxa">
-                    <a class="twitter-timeline" data-theme="light" data-width="400" data-height="500"  data-link-color="#37654E" href="{{ $value->url }}?ref_src=twsrc%5Etfw">Tweets by {{ $value->title }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <a class="twitter-timeline" data-theme="light" data-width="350" data-height="500"  data-link-color="#37654E" href="{{ $value->url }}?ref_src=twsrc%5Etfw">Tweets by {{ $value->title }}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </li>
             </ul>
             @endforeach
